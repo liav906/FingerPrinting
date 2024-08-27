@@ -1,0 +1,22 @@
+model:
+  input_size: 20  # Example, adjust based on your feature count
+  hidden_layers: [256, 128, 64]
+  output_size: 2
+  activation: relu
+  dropout_rate: 0.2
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  validation_split: 0.2
+
+paths:
+  train_data: data/train_data.csv
+  val_data: data/val_data.csv
+  test_data: data/test_data.csv
+  logs: logs/
+  outputs: outputs/
+
+logging:
+  log_interval: 10
